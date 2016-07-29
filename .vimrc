@@ -50,6 +50,8 @@ set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
 set number                 " Show line number
 
+set clipboard=unnamedplus  " share clipboard and yank
+
 " The fish shell is not very compatible to other shells and unexpectedly
 " breaks things that use 'shell'.
 if &shell =~# 'fish$'
