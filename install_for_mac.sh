@@ -22,7 +22,7 @@ if [ ! -f ${EXIST_VIM_FILE} ]; then
     mkdir $HOME/.vim
     mkdir -p $HOME/.vim/bundle ~/.vim/files
     mkdir -p $HOME/.vim/files/backup $HOME/.vim/files/swap $HOME/.vim/files/undo $HOME/.vim/files/info
-    git clone https://www.github.com/Shougo/NeoBundle
+    git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
     echo "finish install vim files"
 fi
 
@@ -42,7 +42,7 @@ if [ ! -f ${EXIST_GIT_FILE} ]; then
 fi
 
 # bash
-if [ ! -f ${EXIST_BASH_PROFILE_FILE} ] && [! -f ${EXIST_BASHRC_FILE} ]; then
+if [ ! -f ${EXIST_BASH_PROFILE_FILE} ] && [ ! -f ${EXIST_BASHRC_FILE} ]; then
     echo "install bash files"
     ln -s $HOME/Documents/project/dotfiles/mac/.bash_profile $HOME
     ln -s $HOME/Documents/project/dotfiles/mac/.bashrc $HOME

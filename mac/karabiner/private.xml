@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root>
+    <appdef>
+        <appname>iTERM2</appname>
+        <equal>com.googlecode.iterm2</equal>
+    </appdef>
+    <appdef>
+        <appname>MACVIM</appname>
+        <equal>org.vim.MacVim</equal>
+    </appdef>
+    <item>
+        <name>ctrl + H to esc</name>
+        <identifier>private.vim_keybind_for_ohnuma</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, ModifierFlag::CONTROL_L,
+            KeyCode::ESCAPE
+        </autogen>
+    </item>
+</root>

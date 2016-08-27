@@ -6,3 +6,4 @@ alias grep='grep --color'
 alias df='df -h'
 # safety rm
 alias rm='rm -i'
+
